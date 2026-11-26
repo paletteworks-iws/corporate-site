@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PALLET WORKS　コーポレートサイト</title>
+<script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
@@ -36,47 +37,49 @@
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="eyebrow">教室運営者様のためのホームページ制作</div>
-      <h1>地域の教室に、<br><span class="marker-title">選ばれるホームページ</span>を。</h1>
-      <p class="lead">「あかしノート」の運営で培った地域に届く発信力を、あなたの教室のホームページ作りに活かします。WordPress・Studio・静的HTMLなど、多様な要望に対応。</p>
-      <div class="btn-row">
+      <div class="eyebrow reveal" style="--d:.05s">教室運営者様のためのホームページ制作</div>
+      <h1 class="reveal" style="--d:.18s">地域の教室に、<br><span class="marker-title">選ばれるホームページ</span>を。</h1>
+      <p class="lead reveal" style="--d:.32s">「あかしノート」の運営で培った地域に届く発信力を、あなたの教室のホームページ作りに活かします。WordPress・Studio・静的HTMLなど、多様な要望に対応。</p>
+      <div class="btn-row reveal" style="--d:.46s">
         <a class="btn-primary" href="#contact">お問い合わせはこちら</a>
         <a class="btn-secondary" href="#jisseki">実績を見る</a>
       </div>
     </div>
-    <div class="hero-image">
+    <div class="hero-image reveal zoom" style="--d:.3s">
       <img src="img/main.webp" alt="">
     </div>
   </div>
 </section>
 
-<section class="strengths ruled" id="dekiru">
+<section class="strengths" id="dekiru">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">できること</div>
-      <h2>ホームページ制作や保守、その先の集客まで。</h2>
-      <p>制作して終わりではなく、公開後の運用や集客まで伴走します。Webが苦手な方も、ヒアリングしながら一緒に形にしていきます。</p>
-    </div>
-    <div class="strength-grid">
-      <div class="strength-card">
-        <div class="num">01</div>
-        <h3>WordPress／Studio／静的HTML<br>多様な要望に対応</h3>
-        <p>ご予算やご要望に合わせて、最適な制作方法をご提案します。</p>
+    <div class="split">
+      <div class="section-head reveal">
+        <div class="eyebrow">できること</div>
+        <h2>ホームページ制作や保守、その先の集客まで。</h2>
+        <p>制作して終わりではなく、公開後の運用や集客まで伴走します。Webが苦手な方も、ヒアリングしながら一緒に形にしていきます。</p>
       </div>
-      <div class="strength-card">
-        <div class="num">02</div>
-        <h3>WordPressの<br>カスタマイズ対応</h3>
-        <p>既存サイトの修正・機能追加など、部分的なご依頼も承ります。</p>
-      </div>
-      <div class="strength-card">
-        <div class="num">03</div>
-        <h3>Web集客の<br>アドバイス＆フォロー</h3>
-        <p>公開後の集客方法まで、継続してサポートします。</p>
-      </div>
-      <div class="strength-card">
-        <div class="num">04</div>
-        <h3>相談しながら<br>進めるホームページ制作</h3>
-        <p>Web知識がなくても、ゆっくり丁寧にヒアリングします。</p>
+      <div class="strength-grid" data-stagger>
+        <div class="strength-card reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>WordPress／Studio／静的HTML<br>多様な要望に対応</h3>
+          <p>ご予算やご要望に合わせて、最適な制作方法をご提案します。</p>
+        </div>
+        <div class="strength-card reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>WordPressの<br>カスタマイズ対応</h3>
+          <p>既存サイトの修正・機能追加など、部分的なご依頼も承ります。</p>
+        </div>
+        <div class="strength-card reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Web集客の<br>アドバイス＆フォロー</h3>
+          <p>公開後の集客方法まで、継続してサポートします。</p>
+        </div>
+        <div class="strength-card reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>相談しながら<br>進めるホームページ制作</h3>
+          <p>Web知識がなくても、ゆっくり丁寧にヒアリングします。</p>
+        </div>
       </div>
     </div>
   </div>
@@ -84,18 +87,17 @@
 
 <section id="jisseki">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="eyebrow">実績紹介</div>
       <h2>地域に根ざした発信の実績</h2>
       <p>地域情報サイト「あかしノート」の運営実績をベースに、地域の方に届く発信のノウハウをお伝えします。</p>
     </div>
 
-    <div class="achieve-lead">
-      <div class="fold"></div>
+    <div class="achieve-lead reveal">
       <div class="achieve-logo"><img src="img/akashinote.png" alt="あかしノート"></div>
       <div>
-        <h3 style="font-size:19px; margin-bottom:10px;">地域情報サイト「あかしノート」</h3>
-        <p style="color:var(--ink-soft); font-size:14px;">明石エリアの地域情報を発信するWebサイト＆Instagramを運営。地域の方々に読まれ、続けられる発信の作り方を実践しています。</p>
+        <h3>地域情報サイト「あかしノート」</h3>
+        <p class="achieve-text">明石エリアの地域情報を発信するWebサイト＆Instagramを運営。地域の方々に読まれ、続けられる発信の作り方を実践しています。</p>
         <div class="achieve-stats">
           <div><div class="n">1年</div><div class="l">運営歴</div></div>
           <div><div class="n">200</div><div class="l">PV数（月平均）</div></div>
@@ -104,8 +106,8 @@
       </div>
     </div>
 
-    <div class="work-grid">
-      <!-- <div class="work-card">
+    <div class="work-grid" data-stagger>
+      <!-- <div class="work-card reveal">
         <div class="work-thumb"></div>
         <div class="work-body">
           <span class="tag-sm">Studio制作</span>
@@ -113,7 +115,7 @@
           <p>教室紹介と体験レッスンの予約導線を整理したサイト</p>
         </div>
       </div> -->
-      <div class="work-card">
+      <div class="work-card reveal">
         <div class="work-thumb">
           <img src="img/jisseki_1.png" alt="ことばと発達相談室しーだーの制作実績">
         </div>
@@ -123,7 +125,7 @@
           <p>料金表やサービス案内、お問い合わせページを掲載したサイト</p>
         </div>
       </div>
-      <!-- <div class="work-card">
+      <!-- <div class="work-card reveal">
         <div class="work-thumb"></div>
         <div class="work-body">
           <span class="tag-sm">カスタマイズ対応</span>
@@ -135,15 +137,15 @@
   </div>
 </section>
 
-<section class="pricing ruled" id="ryoukin">
+<section class="pricing" id="ryoukin">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="eyebrow">料金の目安</div>
       <h2>制作費用の例</h2>
       <p>教室の規模やご要望に応じて内容は調整可能です。まずは無料相談からお気軽にどうぞ。</p>
     </div>
-    <div class="price-grid">
-      <div class="price-card">
+    <div class="price-grid" data-stagger>
+      <div class="price-card reveal">
         <div class="plan-name">ライトプラン</div>
         <div class="plan-price">¥20,000<span>〜（税込）</span></div>
         <div class="plan-desc">まずは1ページで教室を紹介したい方に</div>
@@ -153,7 +155,7 @@
           <li>InstagramのDMやLINEでのお問い合わせがメイン</li>
         </ul>
       </div>
-      <div class="price-card featured">
+      <div class="price-card featured reveal">
         <div class="badge">人気</div>
         <div class="plan-name">スタンダードプラン</div>
         <div class="plan-price">¥50,000<span>〜（税込）</span></div>
@@ -165,7 +167,7 @@
           <li>セキュリティ保守のオプション有り</li>
         </ul>
       </div>
-      <div class="price-card">
+      <div class="price-card reveal">
         <div class="plan-name">WordPressカスタムプラン</div>
         <div class="plan-price">¥180,000<span>〜（税込）</span></div>
         <div class="plan-desc">独自ドメイン運用・拡張性を重視したい方に</div>
@@ -177,34 +179,34 @@
         </ul>
       </div>
     </div>
-    <p class="price-note">上記は目安の金額です。内容により変動しますので、まずはお気軽にご相談ください。</p>
+    <p class="price-note reveal">上記は目安の金額です。内容により変動しますので、まずはお気軽にご相談ください。</p>
   </div>
 </section>
 
 <section id="profile">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="eyebrow">自己紹介</div>
       <h2>はじめまして。</h2>
     </div>
     <div class="profile-grid">
-      <div class="profile-photo">
+      <div class="profile-photo reveal zoom">
         <img src="img/profile.webp" alt="プロフィール写真">
       </div>
-      <div class="profile-text">
-        <h3>お名前</h3>
-        <div class="role">地域情報サイト「あかしノート」運営／Web制作</div>
-        <p>明石エリアで地域情報サイト「あかしノート」を運営しています。日々地域のお店や教室を取材する中で、「発信したいけれど、ホームページまで手が回らない」という声を多く聞いてきました。</p>
-        <p>その声にお応えできるよう、地域の教室運営者様に向けたホームページ制作のサポートを始めました。作って終わりではなく、公開後の集客まで伴走することを大切にしています。</p>
-        <p>デザインは得意ではありませんが、その分「一緒に考える」姿勢を大事にしています。まずはお気軽にご相談ください。</p>
+      <div class="profile-text" data-stagger>
+        <h3 class="reveal">PALETTE WORKS 代表</h3>
+        <div class="role reveal">地域情報サイト「あかしノート」運営／Web制作</div>
+        <p class="reveal">明石エリアで地域情報サイト「あかしノート」を運営しています。日々地域のお店や教室を取材する中で、「発信したいけれど、ホームページまで手が回らない」という声を多く聞いてきました。</p>
+        <p class="reveal">その声にお応えできるよう、地域の教室運営者様に向けたホームページ制作のサポートを始めました。作って終わりではなく、公開後の集客まで伴走することを大切にしています。</p>
+        <p class="reveal">デザインは得意ではありませんが、その分「一緒に考える」姿勢を大事にしています。まずはお気軽にご相談ください。</p>
       </div>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="contact">
-    <div class="eyebrow" style="justify-content:center; color:var(--accent-soft);">お問い合わせ</div>
+  <div class="contact reveal zoom">
+    <div class="eyebrow">お問い合わせ</div>
     <h2>まずは、気軽にご相談ください。</h2>
     <p>ホームページ制作のご相談は、あかしノートのお問い合わせフォームから承っております。<br>InstagramのDMでもお気軽にどうぞ。</p>
     <div class="btn-row">
@@ -225,6 +227,7 @@
 </footer>
 
 <script>
+  /* ---------- スマホメニュー ---------- */
   const menuToggle = document.querySelector(".menu-toggle");
   const mainNav = document.querySelector("#main-nav");
 
@@ -245,6 +248,39 @@
   window.addEventListener("resize", () => {
     if (window.innerWidth > 860) setMenuOpen(false);
   });
+
+  /* ---------- ヘッダー：スクロールで影と境界線 ---------- */
+  const header = document.querySelector("header");
+  function onScroll() {
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- スクロールでふわっと表示 ---------- */
+  // data-stagger を付けた親の子要素は、順番に少しずつ遅らせて表示
+  document.querySelectorAll("[data-stagger]").forEach((group) => {
+    group.querySelectorAll(":scope > .reveal").forEach((el, i) => {
+      el.style.setProperty("--d", (i * 0.12) + "s");
+    });
+  });
+
+  const revealTargets = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target); // 一度表示したらそのまま
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+
+    revealTargets.forEach((el) => observer.observe(el));
+  } else {
+    revealTargets.forEach((el) => el.classList.add("is-visible"));
+  }
 </script>
 
 </body>
